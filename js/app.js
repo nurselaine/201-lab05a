@@ -83,9 +83,7 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  let arraySum = sumArr.reduce(function(result, item){
-    return result + item;
-  }, 0);
+  let arraySum = sumAndMultiply(sumArr[0],sumArr[1],sumArr[2])[0];
   let arrayString = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${arraySum} is their sum.`;
   
   return [arraySum, arrayString];
