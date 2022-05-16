@@ -140,7 +140,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   //use a for loop to iterate through an expression 
   let dynamicProduct = 1;
   for (let i = 0; i < dynamicArray.length; i++){
-    dynamicProduct *= dynamicArray[i];
+    dynamicProduct = multiply(dynamicProduct, dynamicArray[i])[0];
   };
   let dynamicString = `The numbers ${dynamicArray} have a product of ${dynamicProduct}.`
 
